@@ -1,0 +1,208 @@
+
+/* pour le logo text dans la navbar */
+
+#logo-text{
+    line-height:0.5;
+    margin-bottom:0; 
+    margin-top:0.9rem;
+}
+
+.avatarNavbar{
+    background-color:white;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color:#C4D473;
+
+}
+
+/* pour la puce de la liste d'étape */
+
+.puceListeEtape{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: #CCD5AE;
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* pour definir le ratio image des cards */
+.ratio{
+aspect-ratio: 4/3;
+}
+
+/* liste des ingredient */
+.liste-ingredient{
+    background-color:#FEFAE0;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+}
+
+
+/* cartes des tags dans le formulaire recette */
+.tagsOccasion{
+    background-color: #92A455;
+    margin-bottom: .1rem;
+}
+.tagsIngredient{
+    background-color:  #C98C4F;
+    margin-bottom: .1rem;
+}
+.tagsDivers{
+    background-color:  #A69105;
+    margin-bottom: .1rem;
+}
+.cardOccasion{
+    background-color: #FEF6E0;
+
+}
+.cardIngredient{
+    background-color: #FEF6E0;
+
+}
+.cardDivers{
+    background-color: #FEF6E0;
+}
+
+
+/* page d'accueil */
+.text-landing-h1{
+    line-height:1.2rem;
+    margin-top: 140px;
+}
+
+.cassrol{
+    height: 80%!;
+}
+
+.testimonialSpan{
+    background-color: #D4A373;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: black;
+}
+
+.sessionSpan{
+    background-color: #D4A373;
+    color: black;
+    font-size: .9rem;
+text-align: center;
+}
+
+.inscriptionDiv{
+    left: 10%;
+position: relative;
+}
+
+.titreUne{
+    position: relative;
+    top: 40%;
+}
+
+.tagsFiche{
+    background-color:  #C4D473;
+    text-decoration: none;
+    color: black;
+}
+
+#insert_avatar{
+    height: 150px;
+    position:relative;
+    width: fit-content;
+}
+
+.close-avatar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    line-height: 10px;
+    cursor: pointer;
+}
+
+.closeFormRecette{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+@media screen and (max-width: 768px)  {
+    .text-landing-h1{
+        line-height:1.2rem;
+        margin-top: 40px;
+        font-size : 1.4rem;
+    }
+    .text-landing-h4{
+        font-size : 1rem;
+    }
+    .text-landing-h6{
+        font-size : .9rem;
+        padding-right: 40px;
+        margin-bottom: 20px ;
+    }
+    .aboutUs{
+        font-size: .9rem;
+        padding-right: 40px;
+    }
+    .femmeSvg{
+        height: 170px;
+    }
+    .hommeSvg{
+        height:300px;
+        margin-left: 50px;
+    }
+    .divHomme{
+        margin-top: 30px;
+    }
+    .titreUne{
+        font-size: 1.2rem;
+        margin-left: .5rem!;
+
+    }
+    .testimonial{
+        height: 70px;
+    }
+    .testimonial1{
+        height: 90px;
+    }
+    .testimonialText{
+        font-size: .9rem;
+    }
+    .aboutImg{
+        height: 350px;
+margin-left: 50px; 
+   }
+    .inscriptionDiv{
+        margin-left: 0;
+    }
+    .inscriptionSvg{
+        height: 300px;
+    }
+
+    .commentPseudo{
+        font-size: .9rem;
+        margin-left: 30px;
+    }
+
+    .commentDate{
+        font-size: .8rem;
+        margin-left: 0;
+    }
+
+    .commentContenu{
+        font-size: .9rem;
+    }
+
+    .commentAvatar{
+        width: 40px;
+        height: 40px;  
+
+    }
+}
+
