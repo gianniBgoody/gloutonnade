@@ -1,0 +1,1705 @@
+INFO - 2023-03-13 10:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 10:04:47 --> Trying to access array offset on value of type null
+in APPPATH/Views/template/formRecette.php on line 231.
+ 1 APPPATH/Views/template/formRecette.php(231): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/formRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(303): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ajoutRecetteTest()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 10:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:06:43 --> CSRF token verified.
+INFO - 2023-03-13 10:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:07:50 --> CSRF token verified.
+INFO - 2023-03-13 10:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-13 10:07:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`recette`, CONSTRAINT `fk_recette_categorie1` FOREIGN KEY (`categorie_id`) REFERENCES `categorie` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /srv/gloutonnade/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/gloutonnade/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/gloutonnade/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/gloutonnade/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/gloutonnade/system/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/gloutonnade/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /srv/gloutonnade/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /srv/gloutonnade/system/Model.php(729): CodeIgniter\BaseModel->insert()
+#7 /srv/gloutonnade/app/Models/RecetteModel.php(32): CodeIgniter\Model->insert()
+#8 /srv/gloutonnade/app/Controllers/Session.php(297): App\Models\RecetteModel->addRecette()
+#9 /srv/gloutonnade/system/CodeIgniter.php(934): App\Controllers\Session->ajoutRecetteTest()
+#10 /srv/gloutonnade/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /srv/gloutonnade/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /srv/gloutonnade/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-13 10:07:50 --> Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`recette`, CONSTRAINT `fk_recette_categorie1` FOREIGN KEY (`categorie_id`) REFERENCES `categorie` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/RecetteModel.php(32): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Session.php(297): App\Models\RecetteModel->addRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ajoutRecetteTest()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 10:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:09:44 --> CSRF token verified.
+INFO - 2023-03-13 10:09:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 10:09:44 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 10:10:50 --> CSRF token verified.
+INFO - 2023-03-13 10:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-13 10:10:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`recette`, CONSTRAINT `fk_recette_categorie1` FOREIGN KEY (`categorie_id`) REFERENCES `categorie` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /srv/gloutonnade/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/gloutonnade/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/gloutonnade/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/gloutonnade/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/gloutonnade/system/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/gloutonnade/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /srv/gloutonnade/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /srv/gloutonnade/system/Model.php(729): CodeIgniter\BaseModel->insert()
+#7 /srv/gloutonnade/app/Models/RecetteModel.php(32): CodeIgniter\Model->insert()
+#8 /srv/gloutonnade/app/Controllers/Session.php(297): App\Models\RecetteModel->addRecette()
+#9 /srv/gloutonnade/system/CodeIgniter.php(934): App\Controllers\Session->ajoutRecetteTest()
+#10 /srv/gloutonnade/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /srv/gloutonnade/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /srv/gloutonnade/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-13 10:10:50 --> Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`recette`, CONSTRAINT `fk_recette_categorie1` FOREIGN KEY (`categorie_id`) REFERENCES `categorie` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/RecetteModel.php(32): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Session.php(297): App\Models\RecetteModel->addRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ajoutRecetteTest()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 10:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 12:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 12:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 12:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 12:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 12:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 12:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 12:22:01 --> Undefined array key "pseudo"
+in APPPATH/Views/template/pageRecette.php on line 39.
+ 1 APPPATH/Views/template/pageRecette.php(39): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(64): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 12:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 12:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-13 12:24:51 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in /srv/gloutonnade/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/gloutonnade/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/gloutonnade/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/gloutonnade/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/gloutonnade/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/gloutonnade/system/Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/gloutonnade/app/Models/RecetteModel.php(82): CodeIgniter\Model->__call()
+#6 /srv/gloutonnade/app/Controllers/Session.php(43): App\Models\RecetteModel->getRecetteById()
+#7 /srv/gloutonnade/system/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+#8 /srv/gloutonnade/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /srv/gloutonnade/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/gloutonnade/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-13 12:24:51 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/RecetteModel.php(82): CodeIgniter\Model->__call()
+ 4 APPPATH/Controllers/Session.php(43): App\Models\RecetteModel->getRecetteById()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 12:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 12:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 12:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 12:29:32 --> Undefined array key "titre"
+in APPPATH/Views/template/pageRecette.php on line 35.
+ 1 APPPATH/Views/template/pageRecette.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(64): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 12:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 12:30:48 --> Undefined array key "titre"
+in APPPATH/Views/template/pageRecette.php on line 35.
+ 1 APPPATH/Views/template/pageRecette.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(64): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 12:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 12:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:01:27 --> CSRF token verified.
+INFO - 2023-03-13 13:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:08:48 --> CSRF token verified.
+INFO - 2023-03-13 13:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 13:09:42 --> Undefined array key "isAdmin"
+in APPPATH/Views/template/formRecette.php on line 208.
+ 1 APPPATH/Views/template/formRecette.php(208): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/formRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(303): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ajoutRecetteTest()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 13:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 13:12:51 --> Undefined array key "isAdmin"
+in APPPATH/Views/template/formRecette.php on line 209.
+ 1 APPPATH/Views/template/formRecette.php(209): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/formRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(303): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ajoutRecetteTest()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 13:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:14:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 13:16:16 --> Undefined array key "nom_tag"
+in APPPATH/Views/template/formRecette.php on line 172.
+ 1 APPPATH/Views/template/formRecette.php(172): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/formRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(303): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ajoutRecetteTest()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 13:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 13:54:25 --> Trying to access array offset on value of type null
+in APPPATH/Views/template/formRecette.php on line 238.
+ 1 APPPATH/Views/template/formRecette.php(238): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/formRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(247): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ajoutRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 13:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:54:57 --> CSRF token verified.
+INFO - 2023-03-13 13:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 13:55:05 --> CSRF token verified.
+INFO - 2023-03-13 13:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 13:55:05 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 14:00:25 --> CSRF token verified.
+INFO - 2023-03-13 14:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-13 14:00:25 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`recette`, CONSTRAINT `fk_recette_categorie1` FOREIGN KEY (`categorie_id`) REFERENCES `categorie` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /srv/gloutonnade/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/gloutonnade/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/gloutonnade/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/gloutonnade/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/gloutonnade/system/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/gloutonnade/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /srv/gloutonnade/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /srv/gloutonnade/system/Model.php(729): CodeIgniter\BaseModel->insert()
+#7 /srv/gloutonnade/app/Models/RecetteModel.php(32): CodeIgniter\Model->insert()
+#8 /srv/gloutonnade/app/Controllers/Session.php(297): App\Models\RecetteModel->addRecette()
+#9 /srv/gloutonnade/system/CodeIgniter.php(934): App\Controllers\Session->ajoutRecetteTest()
+#10 /srv/gloutonnade/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /srv/gloutonnade/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /srv/gloutonnade/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-13 14:00:25 --> Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`recette`, CONSTRAINT `fk_recette_categorie1` FOREIGN KEY (`categorie_id`) REFERENCES `categorie` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/RecetteModel.php(32): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Session.php(297): App\Models\RecetteModel->addRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ajoutRecetteTest()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 14:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 14:18:20 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 306.
+ 1 SYSTEMPATH/Security/Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify()
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 14:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:20:31 --> CSRF token verified.
+INFO - 2023-03-13 14:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:22:02 --> CSRF token verified.
+INFO - 2023-03-13 14:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:28:39 --> CSRF token verified.
+INFO - 2023-03-13 14:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:22:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:23:12 --> CSRF token verified.
+INFO - 2023-03-13 15:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:23:49 --> CSRF token verified.
+INFO - 2023-03-13 15:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-13 15:23:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`recette`, CONSTRAINT `fk_recette_categorie1` FOREIGN KEY (`categorie_id`) REFERENCES `categorie` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /srv/gloutonnade/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/gloutonnade/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/gloutonnade/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/gloutonnade/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/gloutonnade/system/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/gloutonnade/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /srv/gloutonnade/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /srv/gloutonnade/system/Model.php(729): CodeIgniter\BaseModel->insert()
+#7 /srv/gloutonnade/app/Models/RecetteModel.php(32): CodeIgniter\Model->insert()
+#8 /srv/gloutonnade/app/Controllers/Session.php(297): App\Models\RecetteModel->addRecette()
+#9 /srv/gloutonnade/system/CodeIgniter.php(934): App\Controllers\Session->ajoutRecetteTest()
+#10 /srv/gloutonnade/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /srv/gloutonnade/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /srv/gloutonnade/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-13 15:23:49 --> Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`recette`, CONSTRAINT `fk_recette_categorie1` FOREIGN KEY (`categorie_id`) REFERENCES `categorie` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/RecetteModel.php(32): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Session.php(297): App\Models\RecetteModel->addRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ajoutRecetteTest()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 15:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:24:17 --> CSRF token verified.
+INFO - 2023-03-13 15:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 15:24:17 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 15:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:34:10 --> CSRF token verified.
+INFO - 2023-03-13 15:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 15:36:26 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 306.
+ 1 SYSTEMPATH/Security/Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify()
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 15:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:37:11 --> CSRF token verified.
+INFO - 2023-03-13 15:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:40:00 --> CSRF token verified.
+INFO - 2023-03-13 15:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:40:19 --> CSRF token verified.
+INFO - 2023-03-13 15:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:40:35 --> CSRF token verified.
+INFO - 2023-03-13 15:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:40:52 --> CSRF token verified.
+INFO - 2023-03-13 15:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:41:20 --> CSRF token verified.
+INFO - 2023-03-13 15:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:41:37 --> CSRF token verified.
+INFO - 2023-03-13 15:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:41:50 --> CSRF token verified.
+INFO - 2023-03-13 15:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:42:05 --> CSRF token verified.
+INFO - 2023-03-13 15:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:43:51 --> CSRF token verified.
+INFO - 2023-03-13 15:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:46:59 --> CSRF token verified.
+CRITICAL - 2023-03-13 15:46:59 --> syntax error, unexpected token "public"
+in APPPATH/Controllers/Session.php on line 252.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(892): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 15:48:14 --> CSRF token verified.
+INFO - 2023-03-13 15:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:55:47 --> CSRF token verified.
+INFO - 2023-03-13 15:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:56:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:57:23 --> CSRF token verified.
+INFO - 2023-03-13 15:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 15:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:02:23 --> CSRF token verified.
+INFO - 2023-03-13 16:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:03:55 --> CSRF token verified.
+INFO - 2023-03-13 16:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:05:23 --> CSRF token verified.
+INFO - 2023-03-13 16:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:10:24 --> Trying to access array offset on value of type null
+in APPPATH/Views/template/formRecette.php on line 238.
+ 1 APPPATH/Views/template/formRecette.php(238): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/formRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(247): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ajoutRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:13:07 --> CSRF token verified.
+INFO - 2023-03-13 16:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:14:45 --> CSRF token verified.
+INFO - 2023-03-13 16:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:15:15 --> CSRF token verified.
+INFO - 2023-03-13 16:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:16:18 --> CSRF token verified.
+INFO - 2023-03-13 16:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:17:02 --> CSRF token verified.
+INFO - 2023-03-13 16:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:18:52 --> CSRF token verified.
+INFO - 2023-03-13 16:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:20:18 --> CSRF token verified.
+INFO - 2023-03-13 16:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:23:07 --> CSRF token verified.
+INFO - 2023-03-13 16:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:25:15 --> CSRF token verified.
+INFO - 2023-03-13 16:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:28:22 --> Undefined variable $erreurDescription
+in APPPATH/Views/template/formRecette.php on line 74.
+ 1 APPPATH/Views/template/formRecette.php(74): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/formRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(247): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ajoutRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:30:04 --> CSRF token verified.
+INFO - 2023-03-13 16:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:31:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:31:46 --> CSRF token verified.
+INFO - 2023-03-13 16:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:32:01 --> CSRF token verified.
+INFO - 2023-03-13 16:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:33:06 --> CSRF token verified.
+INFO - 2023-03-13 16:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:34:14 --> CSRF token verified.
+INFO - 2023-03-13 16:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:34:14 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:34:41 --> CSRF token verified.
+INFO - 2023-03-13 16:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:34:41 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:37:41 --> CSRF token verified.
+INFO - 2023-03-13 16:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:37:41 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:39:14 --> CSRF token verified.
+INFO - 2023-03-13 16:39:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:39:14 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:39:29 --> CSRF token verified.
+INFO - 2023-03-13 16:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:39:29 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:40:28 --> CSRF token verified.
+INFO - 2023-03-13 16:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:41:21 --> CSRF token verified.
+INFO - 2023-03-13 16:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:41:21 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:41:58 --> CSRF token verified.
+INFO - 2023-03-13 16:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:41:58 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:44:23 --> CSRF token verified.
+INFO - 2023-03-13 16:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:44:23 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:45:23 --> CSRF token verified.
+INFO - 2023-03-13 16:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:45:23 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:46:11 --> Undefined variable $erreurCategorie
+in APPPATH/Views/template/formRecette.php on line 49.
+ 1 APPPATH/Views/template/formRecette.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/formRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(247): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ajoutRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:47:24 --> CSRF token verified.
+INFO - 2023-03-13 16:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:47:24 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:47:46 --> CSRF token verified.
+INFO - 2023-03-13 16:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:47:46 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:49:02 --> CSRF token verified.
+INFO - 2023-03-13 16:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:49:02 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:49:12 --> CSRF token verified.
+INFO - 2023-03-13 16:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:49:12 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:49:28 --> CSRF token verified.
+INFO - 2023-03-13 16:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:49:28 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:51:27 --> CSRF token verified.
+INFO - 2023-03-13 16:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:51:27 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:52:00 --> CSRF token verified.
+INFO - 2023-03-13 16:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:52:00 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:52:15 --> CSRF token verified.
+INFO - 2023-03-13 16:52:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:52:15 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:52:27 --> CSRF token verified.
+INFO - 2023-03-13 16:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:52:27 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:52:44 --> CSRF token verified.
+INFO - 2023-03-13 16:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 16:52:44 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 16:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:53:33 --> CSRF token verified.
+INFO - 2023-03-13 16:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:11:01 --> CSRF token verified.
+INFO - 2023-03-13 20:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:17:26 --> CSRF token verified.
+INFO - 2023-03-13 20:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 20:17:26 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 20:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:18:31 --> CSRF token verified.
+INFO - 2023-03-13 20:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 20:18:31 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 20:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:18:49 --> CSRF token verified.
+INFO - 2023-03-13 20:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 20:18:49 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 20:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:22:46 --> CSRF token verified.
+INFO - 2023-03-13 20:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 20:22:46 --> Undefined variable $erreurIngredient
+in APPPATH/Views/template/formRecette.php on line 118.
+ 1 APPPATH/Views/template/formRecette.php(118): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/formRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(247): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ajoutRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 20:23:29 --> CSRF token verified.
+INFO - 2023-03-13 20:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 20:23:29 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 20:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:38:37 --> CSRF token verified.
+INFO - 2023-03-13 20:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-13 20:38:37 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`recette`, CONSTRAINT `fk_recette_categorie1` FOREIGN KEY (`categorie_id`) REFERENCES `categorie` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /srv/gloutonnade/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/gloutonnade/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/gloutonnade/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/gloutonnade/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/gloutonnade/system/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/gloutonnade/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /srv/gloutonnade/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /srv/gloutonnade/system/Model.php(729): CodeIgniter\BaseModel->insert()
+#7 /srv/gloutonnade/app/Models/RecetteModel.php(32): CodeIgniter\Model->insert()
+#8 /srv/gloutonnade/app/Controllers/Session.php(297): App\Models\RecetteModel->addRecette()
+#9 /srv/gloutonnade/system/CodeIgniter.php(934): App\Controllers\Session->ajoutRecetteTest()
+#10 /srv/gloutonnade/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /srv/gloutonnade/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /srv/gloutonnade/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-13 20:38:37 --> Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`recette`, CONSTRAINT `fk_recette_categorie1` FOREIGN KEY (`categorie_id`) REFERENCES `categorie` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/RecetteModel.php(32): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Session.php(297): App\Models\RecetteModel->addRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ajoutRecetteTest()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 20:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:38:56 --> CSRF token verified.
+INFO - 2023-03-13 20:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:41:01 --> CSRF token verified.
+INFO - 2023-03-13 20:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 20:41:01 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 20:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:43:02 --> CSRF token verified.
+INFO - 2023-03-13 20:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 20:43:02 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(427): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+ 9 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+10 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+11 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+12 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+13 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+14 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+15 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(383): Kint\Parser\Parser->parse()
+16 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(131): Kint\Parser\Parser->parseArray()
+17 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(565): Kint\Parser\Parser->parse()
+18 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+19 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+20 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+21 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+22 SYSTEMPATH/Debug/Toolbar.php(110): Kint\Kint::dump()
+23 SYSTEMPATH/Debug/Toolbar.php(371): CodeIgniter\Debug\Toolbar->run()
+24 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare()
+25 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+26 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+27 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+28 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 20:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:55:04 --> CSRF token verified.
+INFO - 2023-03-13 20:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 20:57:36 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 306.
+ 1 SYSTEMPATH/Security/Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify()
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 20:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:57:46 --> CSRF token verified.
+INFO - 2023-03-13 20:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 20:59:34 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 306.
+ 1 SYSTEMPATH/Security/Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify()
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 20:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 20:59:39 --> CSRF token verified.
+INFO - 2023-03-13 20:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 21:12:54 --> CSRF token verified.
+INFO - 2023-03-13 21:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 21:13:42 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 306.
+ 1 SYSTEMPATH/Security/Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify()
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 21:13:47 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 306.
+ 1 SYSTEMPATH/Security/Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify()
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 21:13:52 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 306.
+ 1 SYSTEMPATH/Security/Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify()
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 21:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 21:13:58 --> CSRF token verified.
+INFO - 2023-03-13 21:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 21:15:45 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 306.
+ 1 SYSTEMPATH/Security/Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify()
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 21:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 21:15:50 --> CSRF token verified.
+INFO - 2023-03-13 21:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 21:16:47 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 306.
+ 1 SYSTEMPATH/Security/Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify()
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 21:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 21:16:53 --> CSRF token verified.
+INFO - 2023-03-13 21:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 21:18:46 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 306.
+ 1 SYSTEMPATH/Security/Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify()
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 21:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 21:18:51 --> CSRF token verified.
+INFO - 2023-03-13 21:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 21:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 21:34:04 --> CSRF token verified.
+INFO - 2023-03-13 21:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 21:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 21:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 21:56:02 --> CSRF token verified.
+INFO - 2023-03-13 21:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 21:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 21:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 22:53:20 --> Undefined variable $recetteData
+in APPPATH/Views/template/pageSession.php on line 16.
+ 1 APPPATH/Views/template/pageSession.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageSession.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(35): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->sessionIndex()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 22:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 23:01:12 --> Undefined array key "pseudo"
+in APPPATH/Views/partial/landingCard.php on line 29.
+ 1 APPPATH/Views/partial/landingCard.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/partial/landingCard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(431): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/template/pageLanding.php(89): CodeIgniter\View\View->include()
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageLanding.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 9 APPPATH/Controllers/Landing.php(26): view()
+10 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Landing->accueil()
+11 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-13 23:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:14:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:19:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

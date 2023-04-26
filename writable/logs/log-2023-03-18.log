@@ -1,0 +1,808 @@
+INFO - 2023-03-18 00:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:02:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:07:41 --> CSRF token verified.
+INFO - 2023-03-18 00:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:08:22 --> CSRF token verified.
+INFO - 2023-03-18 00:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 00:08:22 --> Too few arguments to function App\Controllers\Session::ficheRecette(), 0 passed in /srv/gloutonnade/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Session.php on line 48.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 00:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:20:47 --> CSRF token verified.
+INFO - 2023-03-18 00:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-18 00:20:47 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`commentaire`, CONSTRAINT `fk_commentaire_membre1` FOREIGN KEY (`membre_id`) REFERENCES `membre` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /srv/gloutonnade/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/gloutonnade/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/gloutonnade/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/gloutonnade/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/gloutonnade/system/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/gloutonnade/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /srv/gloutonnade/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /srv/gloutonnade/system/Model.php(729): CodeIgniter\BaseModel->insert()
+#7 /srv/gloutonnade/app/Models/CommentaireModel.php(32): CodeIgniter\Model->insert()
+#8 /srv/gloutonnade/app/Controllers/Membre.php(118): App\Models\CommentaireModel->commentaireRecette()
+#9 /srv/gloutonnade/system/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+#10 /srv/gloutonnade/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /srv/gloutonnade/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /srv/gloutonnade/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-18 00:20:47 --> Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`commentaire`, CONSTRAINT `fk_commentaire_membre1` FOREIGN KEY (`membre_id`) REFERENCES `membre` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/CommentaireModel.php(32): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Membre.php(118): App\Models\CommentaireModel->commentaireRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 00:23:49 --> CSRF token verified.
+INFO - 2023-03-18 00:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-18 00:23:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`commentaire`, CONSTRAINT `fk_commentaire_membre1` FOREIGN KEY (`membre_id`) REFERENCES `membre` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /srv/gloutonnade/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/gloutonnade/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/gloutonnade/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/gloutonnade/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/gloutonnade/system/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/gloutonnade/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /srv/gloutonnade/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /srv/gloutonnade/system/Model.php(729): CodeIgniter\BaseModel->insert()
+#7 /srv/gloutonnade/app/Models/CommentaireModel.php(32): CodeIgniter\Model->insert()
+#8 /srv/gloutonnade/app/Controllers/Membre.php(118): App\Models\CommentaireModel->commentaireRecette()
+#9 /srv/gloutonnade/system/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+#10 /srv/gloutonnade/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /srv/gloutonnade/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /srv/gloutonnade/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-18 00:23:49 --> Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`commentaire`, CONSTRAINT `fk_commentaire_membre1` FOREIGN KEY (`membre_id`) REFERENCES `membre` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/CommentaireModel.php(32): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Membre.php(118): App\Models\CommentaireModel->commentaireRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 00:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:23:58 --> CSRF token verified.
+INFO - 2023-03-18 00:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-18 00:23:58 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`commentaire`, CONSTRAINT `fk_commentaire_recette1` FOREIGN KEY (`recette_id`) REFERENCES `recette` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /srv/gloutonnade/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/gloutonnade/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/gloutonnade/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/gloutonnade/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/gloutonnade/system/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/gloutonnade/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /srv/gloutonnade/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /srv/gloutonnade/system/Model.php(729): CodeIgniter\BaseModel->insert()
+#7 /srv/gloutonnade/app/Models/CommentaireModel.php(32): CodeIgniter\Model->insert()
+#8 /srv/gloutonnade/app/Controllers/Membre.php(118): App\Models\CommentaireModel->commentaireRecette()
+#9 /srv/gloutonnade/system/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+#10 /srv/gloutonnade/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /srv/gloutonnade/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /srv/gloutonnade/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-18 00:23:58 --> Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`commentaire`, CONSTRAINT `fk_commentaire_recette1` FOREIGN KEY (`recette_id`) REFERENCES `recette` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/CommentaireModel.php(32): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Membre.php(118): App\Models\CommentaireModel->commentaireRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 00:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:32:26 --> CSRF token verified.
+INFO - 2023-03-18 00:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-18 00:32:26 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`commentaire`, CONSTRAINT `fk_commentaire_recette1` FOREIGN KEY (`recette_id`) REFERENCES `recette` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /srv/gloutonnade/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/gloutonnade/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/gloutonnade/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/gloutonnade/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/gloutonnade/system/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/gloutonnade/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /srv/gloutonnade/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /srv/gloutonnade/system/Model.php(729): CodeIgniter\BaseModel->insert()
+#7 /srv/gloutonnade/app/Models/CommentaireModel.php(32): CodeIgniter\Model->insert()
+#8 /srv/gloutonnade/app/Controllers/Membre.php(118): App\Models\CommentaireModel->commentaireRecette()
+#9 /srv/gloutonnade/system/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+#10 /srv/gloutonnade/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /srv/gloutonnade/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /srv/gloutonnade/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-18 00:32:26 --> Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`commentaire`, CONSTRAINT `fk_commentaire_recette1` FOREIGN KEY (`recette_id`) REFERENCES `recette` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/CommentaireModel.php(32): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Membre.php(118): App\Models\CommentaireModel->commentaireRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 00:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:35:28 --> CSRF token verified.
+INFO - 2023-03-18 00:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-18 00:35:28 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`commentaire`, CONSTRAINT `fk_commentaire_recette1` FOREIGN KEY (`recette_id`) REFERENCES `recette` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /srv/gloutonnade/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/gloutonnade/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/gloutonnade/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/gloutonnade/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/gloutonnade/system/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/gloutonnade/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /srv/gloutonnade/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /srv/gloutonnade/system/Model.php(729): CodeIgniter\BaseModel->insert()
+#7 /srv/gloutonnade/app/Models/CommentaireModel.php(32): CodeIgniter\Model->insert()
+#8 /srv/gloutonnade/app/Controllers/Membre.php(118): App\Models\CommentaireModel->commentaireRecette()
+#9 /srv/gloutonnade/system/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+#10 /srv/gloutonnade/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /srv/gloutonnade/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /srv/gloutonnade/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-18 00:35:28 --> Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`commentaire`, CONSTRAINT `fk_commentaire_recette1` FOREIGN KEY (`recette_id`) REFERENCES `recette` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/CommentaireModel.php(32): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Membre.php(118): App\Models\CommentaireModel->commentaireRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 00:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:48:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:56:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 00:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 01:00:04 --> CSRF token verified.
+INFO - 2023-03-18 01:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-18 01:00:04 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`commentaire`, CONSTRAINT `fk_commentaire_recette1` FOREIGN KEY (`recette_id`) REFERENCES `recette` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /srv/gloutonnade/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/gloutonnade/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/gloutonnade/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/gloutonnade/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/gloutonnade/system/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/gloutonnade/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /srv/gloutonnade/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /srv/gloutonnade/system/Model.php(729): CodeIgniter\BaseModel->insert()
+#7 /srv/gloutonnade/app/Models/CommentaireModel.php(32): CodeIgniter\Model->insert()
+#8 /srv/gloutonnade/app/Controllers/Membre.php(118): App\Models\CommentaireModel->commentaireRecette()
+#9 /srv/gloutonnade/system/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+#10 /srv/gloutonnade/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /srv/gloutonnade/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /srv/gloutonnade/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-18 01:00:04 --> Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`commentaire`, CONSTRAINT `fk_commentaire_recette1` FOREIGN KEY (`recette_id`) REFERENCES `recette` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/CommentaireModel.php(32): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Membre.php(118): App\Models\CommentaireModel->commentaireRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 01:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 01:04:52 --> CSRF token verified.
+INFO - 2023-03-18 01:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-18 01:04:52 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`commentaire`, CONSTRAINT `fk_commentaire_recette1` FOREIGN KEY (`recette_id`) REFERENCES `recette` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /srv/gloutonnade/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/gloutonnade/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/gloutonnade/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/gloutonnade/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/gloutonnade/system/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/gloutonnade/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /srv/gloutonnade/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /srv/gloutonnade/system/Model.php(729): CodeIgniter\BaseModel->insert()
+#7 /srv/gloutonnade/app/Models/CommentaireModel.php(32): CodeIgniter\Model->insert()
+#8 /srv/gloutonnade/app/Controllers/Membre.php(118): App\Models\CommentaireModel->commentaireRecette()
+#9 /srv/gloutonnade/system/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+#10 /srv/gloutonnade/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /srv/gloutonnade/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /srv/gloutonnade/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-18 01:04:52 --> Cannot add or update a child row: a foreign key constraint fails (`Gloutonnade`.`commentaire`, CONSTRAINT `fk_commentaire_recette1` FOREIGN KEY (`recette_id`) REFERENCES `recette` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/CommentaireModel.php(32): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Membre.php(118): App\Models\CommentaireModel->commentaireRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 01:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 01:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 01:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 01:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 01:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 01:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 01:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 01:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 01:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 01:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 01:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 09:31:59 --> Trying to access array offset on value of type null
+in APPPATH/Views/template/pageRecette.php on line 122.
+ 1 APPPATH/Views/template/pageRecette.php(122): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(73): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 09:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:34:12 --> CSRF token verified.
+INFO - 2023-03-18 09:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:34:34 --> CSRF token verified.
+INFO - 2023-03-18 09:34:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 09:34:34 --> Undefined variable $recetteData
+in APPPATH/Views/template/pageRecette.php on line 35.
+ 1 APPPATH/Views/template/pageRecette.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Membre.php(120): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 09:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:36:34 --> CSRF token verified.
+INFO - 2023-03-18 09:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 09:36:34 --> Undefined variable $recetteData
+in APPPATH/Views/template/pageRecette.php on line 35.
+ 1 APPPATH/Views/template/pageRecette.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Membre.php(120): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 09:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 09:49:27 --> Undefined array key "pseudo"
+in APPPATH/Views/template/pageRecette.php on line 39.
+ 1 APPPATH/Views/template/pageRecette.php(39): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(73): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 09:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 09:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-18 10:32:30 --> mysqli_sql_exception: Unknown column 'decription' in 'field list' in /srv/gloutonnade/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/gloutonnade/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/gloutonnade/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/gloutonnade/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/gloutonnade/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/gloutonnade/system/Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/gloutonnade/app/Models/RecetteModel.php(84): CodeIgniter\Model->__call()
+#6 /srv/gloutonnade/app/Controllers/Session.php(53): App\Models\RecetteModel->getRecetteById()
+#7 /srv/gloutonnade/system/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+#8 /srv/gloutonnade/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /srv/gloutonnade/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/gloutonnade/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-18 10:32:30 --> Unknown column 'decription' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/RecetteModel.php(84): CodeIgniter\Model->__call()
+ 4 APPPATH/Controllers/Session.php(53): App\Models\RecetteModel->getRecetteById()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 10:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-18 10:33:06 --> mysqli_sql_exception: Unknown column 'decription' in 'field list' in /srv/gloutonnade/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/gloutonnade/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/gloutonnade/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/gloutonnade/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/gloutonnade/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/gloutonnade/system/Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/gloutonnade/app/Models/RecetteModel.php(84): CodeIgniter\Model->__call()
+#6 /srv/gloutonnade/app/Controllers/Session.php(53): App\Models\RecetteModel->getRecetteById()
+#7 /srv/gloutonnade/system/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+#8 /srv/gloutonnade/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /srv/gloutonnade/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/gloutonnade/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-18 10:33:06 --> Unknown column 'decription' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/RecetteModel.php(84): CodeIgniter\Model->__call()
+ 4 APPPATH/Controllers/Session.php(53): App\Models\RecetteModel->getRecetteById()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 10:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-18 10:34:41 --> mysqli_sql_exception: Unknown column 'decription' in 'field list' in /srv/gloutonnade/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/gloutonnade/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/gloutonnade/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/gloutonnade/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/gloutonnade/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/gloutonnade/system/Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/gloutonnade/app/Models/RecetteModel.php(84): CodeIgniter\Model->__call()
+#6 /srv/gloutonnade/app/Controllers/Session.php(53): App\Models\RecetteModel->getRecetteById()
+#7 /srv/gloutonnade/system/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+#8 /srv/gloutonnade/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /srv/gloutonnade/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/gloutonnade/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-18 10:34:41 --> Unknown column 'decription' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/RecetteModel.php(84): CodeIgniter\Model->__call()
+ 4 APPPATH/Controllers/Session.php(53): App\Models\RecetteModel->getRecetteById()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 10:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-18 10:36:32 --> mysqli_sql_exception: Column 'id' in field list is ambiguous in /srv/gloutonnade/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/gloutonnade/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/gloutonnade/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/gloutonnade/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/gloutonnade/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/gloutonnade/system/Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/gloutonnade/app/Models/RecetteModel.php(83): CodeIgniter\Model->__call()
+#6 /srv/gloutonnade/app/Controllers/Session.php(53): App\Models\RecetteModel->getRecetteById()
+#7 /srv/gloutonnade/system/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+#8 /srv/gloutonnade/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /srv/gloutonnade/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/gloutonnade/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-18 10:36:32 --> Column 'id' in field list is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/RecetteModel.php(83): CodeIgniter\Model->__call()
+ 4 APPPATH/Controllers/Session.php(53): App\Models\RecetteModel->getRecetteById()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 10:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:42:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 10:42:24 --> Undefined array key "pseudo"
+in APPPATH/Views/partial/landingCard.php on line 29.
+ 1 APPPATH/Views/partial/landingCard.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/partial/landingCard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(431): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/template/pageLanding.php(101): CodeIgniter\View\View->include()
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageLanding.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 9 APPPATH/Controllers/Landing.php(26): view()
+10 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Landing->accueil()
+11 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 10:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 10:43:10 --> Undefined array key "pseudo"
+in APPPATH/Views/partial/landingCard.php on line 29.
+ 1 APPPATH/Views/partial/landingCard.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/partial/landingCard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(431): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/template/pageLanding.php(101): CodeIgniter\View\View->include()
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageLanding.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 9 APPPATH/Controllers/Landing.php(26): view()
+10 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Landing->accueil()
+11 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 10:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 10:48:47 --> CSRF token verified.
+INFO - 2023-03-18 10:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 10:48:47 --> Undefined variable $recetteData
+in APPPATH/Views/template/pageRecette.php on line 35.
+ 1 APPPATH/Views/template/pageRecette.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Membre.php(120): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 10:59:46 --> CSRF token verified.
+INFO - 2023-03-18 10:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 10:59:46 --> Undefined variable $recetteData
+in APPPATH/Views/template/pageRecette.php on line 35.
+ 1 APPPATH/Views/template/pageRecette.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Membre.php(120): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 10:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:06:04 --> CSRF token verified.
+INFO - 2023-03-18 11:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 11:06:04 --> Undefined variable $recetteData
+in APPPATH/Views/template/pageRecette.php on line 35.
+ 1 APPPATH/Views/template/pageRecette.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Membre.php(120): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 11:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:15:55 --> CSRF token verified.
+INFO - 2023-03-18 11:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:16:10 --> CSRF token verified.
+INFO - 2023-03-18 11:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:18:20 --> CSRF token verified.
+INFO - 2023-03-18 11:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:18:33 --> CSRF token verified.
+INFO - 2023-03-18 11:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:18:43 --> CSRF token verified.
+INFO - 2023-03-18 11:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:38:45 --> CSRF token verified.
+INFO - 2023-03-18 11:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 11:38:45 --> Undefined variable $recetteData
+in APPPATH/Views/template/pageRecette.php on line 35.
+ 1 APPPATH/Views/template/pageRecette.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Membre.php(120): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Membre->commentaireRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 11:42:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:50:17 --> CSRF token verified.
+INFO - 2023-03-18 11:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 11:50:17 --> Too few arguments to function App\Controllers\Session::ficheRecette(), 0 passed in /srv/gloutonnade/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Session.php on line 48.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 11:51:45 --> CSRF token verified.
+INFO - 2023-03-18 11:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 11:51:45 --> Too few arguments to function App\Controllers\Session::ficheRecette(), 0 passed in /srv/gloutonnade/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Session.php on line 48.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 11:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:51:55 --> CSRF token verified.
+INFO - 2023-03-18 11:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 11:51:55 --> Too few arguments to function App\Controllers\Session::ficheRecette(), 0 passed in /srv/gloutonnade/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Session.php on line 48.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 11:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:56:54 --> CSRF token verified.
+INFO - 2023-03-18 11:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:59:01 --> CSRF token verified.
+INFO - 2023-03-18 11:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 11:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:00:18 --> CSRF token verified.
+INFO - 2023-03-18 12:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:01:13 --> CSRF token verified.
+INFO - 2023-03-18 12:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 12:09:10 --> Trying to access array offset on value of type null
+in APPPATH/Views/template/pageRecette.php on line 122.
+ 1 APPPATH/Views/template/pageRecette.php(122): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(83): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 12:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 12:09:16 --> Trying to access array offset on value of type null
+in APPPATH/Views/template/pageRecette.php on line 122.
+ 1 APPPATH/Views/template/pageRecette.php(122): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(83): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 12:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 12:09:28 --> Trying to access array offset on value of type null
+in APPPATH/Views/template/pageRecette.php on line 122.
+ 1 APPPATH/Views/template/pageRecette.php(122): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(83): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 12:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 12:09:41 --> Trying to access array offset on value of type null
+in APPPATH/Views/template/pageRecette.php on line 122.
+ 1 APPPATH/Views/template/pageRecette.php(122): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(83): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 12:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:41:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:41:41 --> CSRF token verified.
+INFO - 2023-03-18 12:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:41:56 --> CSRF token verified.
+INFO - 2023-03-18 12:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:42:15 --> CSRF token verified.
+INFO - 2023-03-18 12:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 12:42:15 --> The route for "recette" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+ 2 APPPATH/Controllers/Session.php(80): CodeIgniter\HTTP\RedirectResponse->route()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 12:43:28 --> CSRF token verified.
+INFO - 2023-03-18 12:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 12:43:28 --> The route for "recette/8" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+ 2 APPPATH/Controllers/Session.php(80): CodeIgniter\HTTP\RedirectResponse->route()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 12:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:44:29 --> CSRF token verified.
+INFO - 2023-03-18 12:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 12:44:29 --> The route for "recette/8" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+ 2 APPPATH/Controllers/Session.php(80): CodeIgniter\HTTP\RedirectResponse->route()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 12:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:46:55 --> CSRF token verified.
+INFO - 2023-03-18 12:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 12:46:55 --> The route for "http://gloutonnade.local/recette/8" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+ 2 SYSTEMPATH/Common.php(869): CodeIgniter\HTTP\RedirectResponse->route()
+ 3 APPPATH/Controllers/Session.php(80): redirect()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 12:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 12:49:30 --> CSRF token verified.
+INFO - 2023-03-18 12:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 13:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-18 13:47:17 --> Trying to access array offset on value of type null
+in APPPATH/Views/template/pageRecette.php on line 130.
+ 1 APPPATH/Views/template/pageRecette.php(130): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/template/pageRecette.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Session.php(97): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Session->ficheRecette()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-18 14:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 14:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-18 14:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
